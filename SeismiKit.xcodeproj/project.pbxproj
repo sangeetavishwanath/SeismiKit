@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39DA803139792180CB6E15C6 /* libPods-SeismiKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE94E6DF9A6BC154AE371B27 /* libPods-SeismiKit.a */; };
 		A702CB4F1DA9B2A70002C010 /* SeismiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A702CB451DA9B2A60002C010 /* SeismiKit.framework */; };
 		A702CB541DA9B2A70002C010 /* SeismiKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A702CB531DA9B2A70002C010 /* SeismiKitTests.m */; };
 		A702CB561DA9B2A70002C010 /* SeismiKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A702CB481DA9B2A60002C010 /* SeismiKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AEE7A1211EDFBCBBA00805B0 /* libPods-SeismiKitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA98711D56B1D564848AC87 /* libPods-SeismiKitTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +25,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B9C6F5394222A77B424B0A3 /* Pods-SeismiKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeismiKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SeismiKitTests/Pods-SeismiKitTests.release.xcconfig"; sourceTree = "<group>"; };
+		4D4B4BA547D5058F739C553B /* Pods-SeismiKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeismiKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-SeismiKit/Pods-SeismiKit.release.xcconfig"; sourceTree = "<group>"; };
+		9EA98711D56B1D564848AC87 /* libPods-SeismiKitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SeismiKitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A702CB451DA9B2A60002C010 /* SeismiKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SeismiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A702CB481DA9B2A60002C010 /* SeismiKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeismiKit.h; sourceTree = "<group>"; };
 		A702CB491DA9B2A60002C010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A702CB4E1DA9B2A70002C010 /* SeismiKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeismiKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A702CB531DA9B2A70002C010 /* SeismiKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeismiKitTests.m; sourceTree = "<group>"; };
 		A702CB551DA9B2A70002C010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE94E6DF9A6BC154AE371B27 /* libPods-SeismiKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SeismiKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBA9286D7E747E12E8F6A743 /* Pods-SeismiKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeismiKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SeismiKitTests/Pods-SeismiKitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E62BAD53487683CACC30FC8A /* Pods-SeismiKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeismiKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SeismiKit/Pods-SeismiKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39DA803139792180CB6E15C6 /* libPods-SeismiKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +53,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A702CB4F1DA9B2A70002C010 /* SeismiKit.framework in Frameworks */,
+				AEE7A1211EDFBCBBA00805B0 /* libPods-SeismiKitTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +66,8 @@
 				A702CB471DA9B2A60002C010 /* SeismiKit */,
 				A702CB521DA9B2A70002C010 /* SeismiKitTests */,
 				A702CB461DA9B2A60002C010 /* Products */,
+				F378DF2649E9FABD5CCBD8D2 /* Pods */,
+				CD61F29403D80FBB6B0E9EBB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +98,26 @@
 			path = SeismiKitTests;
 			sourceTree = "<group>";
 		};
+		CD61F29403D80FBB6B0E9EBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE94E6DF9A6BC154AE371B27 /* libPods-SeismiKit.a */,
+				9EA98711D56B1D564848AC87 /* libPods-SeismiKitTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F378DF2649E9FABD5CCBD8D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E62BAD53487683CACC30FC8A /* Pods-SeismiKit.debug.xcconfig */,
+				4D4B4BA547D5058F739C553B /* Pods-SeismiKit.release.xcconfig */,
+				CBA9286D7E747E12E8F6A743 /* Pods-SeismiKitTests.debug.xcconfig */,
+				3B9C6F5394222A77B424B0A3 /* Pods-SeismiKitTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -104,10 +136,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A702CB591DA9B2A70002C010 /* Build configuration list for PBXNativeTarget "SeismiKit" */;
 			buildPhases = (
+				B766FC9B51A111DAD97DDF85 /* [CP] Check Pods Manifest.lock */,
 				A702CB401DA9B2A60002C010 /* Sources */,
 				A702CB411DA9B2A60002C010 /* Frameworks */,
 				A702CB421DA9B2A60002C010 /* Headers */,
 				A702CB431DA9B2A60002C010 /* Resources */,
+				9FB70A845E8FF35DDEAE9263 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A702CB5C1DA9B2A70002C010 /* Build configuration list for PBXNativeTarget "SeismiKitTests" */;
 			buildPhases = (
+				980F84A8FBE133DC7F754DDC /* [CP] Check Pods Manifest.lock */,
 				A702CB4A1DA9B2A70002C010 /* Sources */,
 				A702CB4B1DA9B2A70002C010 /* Frameworks */,
 				A702CB4C1DA9B2A70002C010 /* Resources */,
+				164FB53979C6CD1423BED39B /* [CP] Embed Pods Frameworks */,
+				E38E4FFB118245A8243996EE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,6 +228,84 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		164FB53979C6CD1423BED39B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SeismiKitTests/Pods-SeismiKitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		980F84A8FBE133DC7F754DDC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9FB70A845E8FF35DDEAE9263 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SeismiKit/Pods-SeismiKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B766FC9B51A111DAD97DDF85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E38E4FFB118245A8243996EE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SeismiKitTests/Pods-SeismiKitTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A702CB401DA9B2A60002C010 /* Sources */ = {
@@ -317,6 +432,7 @@
 		};
 		A702CB5A1DA9B2A70002C010 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E62BAD53487683CACC30FC8A /* Pods-SeismiKit.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -335,6 +451,7 @@
 		};
 		A702CB5B1DA9B2A70002C010 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D4B4BA547D5058F739C553B /* Pods-SeismiKit.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -353,6 +470,7 @@
 		};
 		A702CB5D1DA9B2A70002C010 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBA9286D7E747E12E8F6A743 /* Pods-SeismiKitTests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = X8H87ZM82J;
 				INFOPLIST_FILE = SeismiKitTests/Info.plist;
@@ -364,6 +482,7 @@
 		};
 		A702CB5E1DA9B2A70002C010 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B9C6F5394222A77B424B0A3 /* Pods-SeismiKitTests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = X8H87ZM82J;
 				INFOPLIST_FILE = SeismiKitTests/Info.plist;
@@ -392,6 +511,7 @@
 				A702CB5B1DA9B2A70002C010 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A702CB5C1DA9B2A70002C010 /* Build configuration list for PBXNativeTarget "SeismiKitTests" */ = {
 			isa = XCConfigurationList;
@@ -400,6 +520,7 @@
 				A702CB5E1DA9B2A70002C010 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
