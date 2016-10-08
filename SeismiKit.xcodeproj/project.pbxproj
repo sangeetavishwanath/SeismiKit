@@ -11,6 +11,8 @@
 		A702CB4F1DA9B2A70002C010 /* SeismiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A702CB451DA9B2A60002C010 /* SeismiKit.framework */; };
 		A702CB541DA9B2A70002C010 /* SeismiKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A702CB531DA9B2A70002C010 /* SeismiKitTests.m */; };
 		A702CB561DA9B2A70002C010 /* SeismiKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A702CB481DA9B2A60002C010 /* SeismiKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A702CB621DA9B6070002C010 /* EarthquakesController.h in Headers */ = {isa = PBXBuildFile; fileRef = A702CB601DA9B6070002C010 /* EarthquakesController.h */; };
+		A702CB631DA9B6070002C010 /* EarthquakesController.m in Sources */ = {isa = PBXBuildFile; fileRef = A702CB611DA9B6070002C010 /* EarthquakesController.m */; };
 		AEE7A1211EDFBCBBA00805B0 /* libPods-SeismiKitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA98711D56B1D564848AC87 /* libPods-SeismiKitTests.a */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +36,8 @@
 		A702CB4E1DA9B2A70002C010 /* SeismiKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeismiKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A702CB531DA9B2A70002C010 /* SeismiKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeismiKitTests.m; sourceTree = "<group>"; };
 		A702CB551DA9B2A70002C010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A702CB601DA9B6070002C010 /* EarthquakesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthquakesController.h; sourceTree = "<group>"; };
+		A702CB611DA9B6070002C010 /* EarthquakesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthquakesController.m; sourceTree = "<group>"; };
 		AE94E6DF9A6BC154AE371B27 /* libPods-SeismiKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SeismiKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBA9286D7E747E12E8F6A743 /* Pods-SeismiKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeismiKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SeismiKitTests/Pods-SeismiKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E62BAD53487683CACC30FC8A /* Pods-SeismiKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeismiKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SeismiKit/Pods-SeismiKit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -83,6 +87,7 @@
 		A702CB471DA9B2A60002C010 /* SeismiKit */ = {
 			isa = PBXGroup;
 			children = (
+				A702CB5F1DA9B5CC0002C010 /* Earthquakes */,
 				A702CB481DA9B2A60002C010 /* SeismiKit.h */,
 				A702CB491DA9B2A60002C010 /* Info.plist */,
 			);
@@ -96,6 +101,15 @@
 				A702CB551DA9B2A70002C010 /* Info.plist */,
 			);
 			path = SeismiKitTests;
+			sourceTree = "<group>";
+		};
+		A702CB5F1DA9B5CC0002C010 /* Earthquakes */ = {
+			isa = PBXGroup;
+			children = (
+				A702CB601DA9B6070002C010 /* EarthquakesController.h */,
+				A702CB611DA9B6070002C010 /* EarthquakesController.m */,
+			);
+			path = Earthquakes;
 			sourceTree = "<group>";
 		};
 		CD61F29403D80FBB6B0E9EBB /* Frameworks */ = {
@@ -125,6 +139,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A702CB621DA9B6070002C010 /* EarthquakesController.h in Headers */,
 				A702CB561DA9B2A70002C010 /* SeismiKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A702CB631DA9B6070002C010 /* EarthquakesController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
