@@ -67,7 +67,7 @@ sessionManager.securityPolicy.allowInvalidCertificates = YES;
 ```
 This is insecure and not recommended for production. Instead, we should consider communication over HTTPS connections with SSL pinning enabled.
 
-#### Improvements: Testing
+##### Improvements: Testing
 1. Unit tests for `EarthquakesService`
 2. Unit tests for `SessionService`
 3. Unit tests for `SessionManagerFactory`
