@@ -30,10 +30,15 @@
                     EarthquakesList *earthquakesList = [MTLJSONAdapter modelOfClass:EarthquakesList.class
                                                                  fromJSONDictionary:responseObject
                                                                               error:&error];
-                    NSLog(@"%@", earthquakesList);
+
+                    if (error) {
+                        [self.delegate earthquakesService:self didFailToRetrieveEarthquakesWithError:error];
+                    } else {
+                        [self.delegate earthquakesService:self didRetrieveEarthquakes:earthquakesList];
+                    }
                 }
                 failure:^(NSURLSessionDataTask *task, NSError *httpError) {
-                    // Handle error here
+                    [self.delegate earthquakesService:self didFailToRetrieveEarthquakesWithError:httpError];
                 }];
 
 }
