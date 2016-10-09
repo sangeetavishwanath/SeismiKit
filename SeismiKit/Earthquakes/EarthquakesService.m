@@ -9,6 +9,7 @@
 #import "EarthquakesService.h"
 
 #import "EarthquakesRequest.h"
+#import "EarthquakesList.h"
 #import "SessionService.h"
 
 #import <AFNetworking/AFNetworking.h>
@@ -24,7 +25,12 @@
              parameters:request.parameters
                progress:nil
                 success:^(NSURLSessionDataTask *task, id responseObject) {
-                    // Handle successful response here
+
+                    NSError *error;
+                    EarthquakesList *earthquakesList = [MTLJSONAdapter modelOfClass:EarthquakesList.class
+                                                                 fromJSONDictionary:responseObject
+                                                                              error:&error];
+                    NSLog(@"%@", earthquakesList);
                 }
                 failure:^(NSURLSessionDataTask *task, NSError *httpError) {
                     // Handle error here

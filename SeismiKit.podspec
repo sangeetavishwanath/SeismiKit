@@ -22,7 +22,10 @@ Pod::Spec.new do |s|
 
   s.source_files = 'SeismiKit/**/*'
   s.public_header_files = [
-    'SeismiKit/SeismiKit.h'
+    'SeismiKit/SeismiKit.h',
+    'SeismiKit/Earthquakes/EarthquakesController.h',
+    'SeismiKit/Earthquakes/Model/Earthquake.h',
+    'SeismiKit/Earthquakes/Model/EarthquakesList.h'
   ]
 
   s.dependency 'AFNetworking', '~> 3.1'

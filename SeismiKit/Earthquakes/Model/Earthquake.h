@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Mantle/Mantle.h>
 
-@interface Earthquake : NSObject
+@interface Earthquake : MTLModel <MTLJSONSerializing>
 
 @property (nonatomic, readonly, copy) NSString *source;
 @property (nonatomic, readonly, copy) NSString *earthquakeId;
