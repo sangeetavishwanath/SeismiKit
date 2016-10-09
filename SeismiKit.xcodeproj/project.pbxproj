@@ -265,7 +265,6 @@
 				TargetAttributes = {
 					A702CB441DA9B2A60002C010 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = X8H87ZM82J;
 						ProvisioningStyle = Automatic;
 					};
 					A702CB4D1DA9B2A70002C010 = {
@@ -463,7 +462,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -508,7 +507,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -522,7 +521,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E62BAD53487683CACC30FC8A /* Pods-SeismiKit.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = X8H87ZM82J;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -542,7 +541,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4D4B4BA547D5058F739C553B /* Pods-SeismiKit.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = X8H87ZM82J;
 				DYLIB_COMPATIBILITY_VERSION = 1;
