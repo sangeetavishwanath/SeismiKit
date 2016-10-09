@@ -8,12 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-//! Project version number for SeismiKit.
-FOUNDATION_EXPORT double SeismiKitVersionNumber;
-
-//! Project version string for SeismiKit.
-FOUNDATION_EXPORT const unsigned char SeismiKitVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <SeismiKit/PublicHeader.h>
-
+#import "EarthquakesController.h"
+#import "Earthquake.h"
+#import "EarthquakesList.h"
 

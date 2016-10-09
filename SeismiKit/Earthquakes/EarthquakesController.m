@@ -44,7 +44,7 @@
 
 #pragma mark - EarthquakesServiceDelegate
 
-- (void)earthquakesService:(EarthquakesService *)controller didRetrieveEarthquakes:(EarthquakesList *)earthquakeList
+- (void)earthquakesService:(EarthquakesService *)service didRetrieveEarthquakes:(EarthquakesList *)earthquakeList
 {
     /**
      *  At the moment, we just pass the earthquakes list straight to the delegate.
@@ -57,7 +57,7 @@
     [self.delegate earthquakesController:self didRetrieveEarthquakes:earthquakeList.earthquakes];
 }
 
-- (void)earthquakesService:(EarthquakesService *)controller didFailToRetrieveEarthquakesWithError:(NSError *)error
+- (void)earthquakesService:(EarthquakesService *)service didFailToRetrieveEarthquakesWithError:(NSError *)error
 {
     [self.delegate earthquakesController:self didFailToRetrieveEarthquakesWithError:error];
 }

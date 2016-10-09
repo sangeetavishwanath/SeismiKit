@@ -562,8 +562,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CBA9286D7E747E12E8F6A743 /* Pods-SeismiKitTests.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				DEVELOPMENT_TEAM = X8H87ZM82J;
 				INFOPLIST_FILE = SeismiKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.sangeetavishwanath.SeismiKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -574,8 +576,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B9C6F5394222A77B424B0A3 /* Pods-SeismiKitTests.release.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				DEVELOPMENT_TEAM = X8H87ZM82J;
 				INFOPLIST_FILE = SeismiKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.sangeetavishwanath.SeismiKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

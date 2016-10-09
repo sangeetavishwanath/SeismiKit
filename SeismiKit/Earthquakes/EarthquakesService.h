@@ -19,18 +19,18 @@
 /**
  Use this method to notify delegates of the successful retrieval of earthquakes
 
- @param controller  The EarthquakesService notifying the delegate
- @param earthquakes The list of earthquakes retrieved
+ @param service        The EarthquakesService notifying the delegate
+ @param earthquakeList The list of earthquakes retrieved
  */
-- (void)earthquakesService:(EarthquakesService *)controller didRetrieveEarthquakes:(EarthquakesList *)earthquakeList;
+- (void)earthquakesService:(EarthquakesService *)service didRetrieveEarthquakes:(EarthquakesList *)earthquakeList;
 
 /**
  Use this method to notify delegates of a failure in retrieving earthquakes
 
- @param controller The EarthquakesService notifying the delegate
+ @param service    The EarthquakesService notifying the delegate
  @param error      The error encountered
  */
-- (void)earthquakesService:(EarthquakesService *)controller didFailToRetrieveEarthquakesWithError:(NSError *)error;
+- (void)earthquakesService:(EarthquakesService *)service didFailToRetrieveEarthquakesWithError:(NSError *)error;
 
 @end
 
