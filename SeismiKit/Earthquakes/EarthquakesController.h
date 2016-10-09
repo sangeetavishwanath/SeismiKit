@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@class EarthquakesController;
 @class Earthquake;
+@class EarthquakesController;
+@class EarthquakesService;
 
 /**
  This protocol defines methods to notify delegates of the earthquake retrieval status
@@ -38,6 +39,22 @@
  The EarthquakesController is used to retrieve earthquakes information
  */
 @interface EarthquakesController : NSObject
+
+/**
+ Initialises an instance of EarthquakesController with the EarthquakesService instance
+
+ @param service The EarthquakesService
+
+ @return An instance of EarthquakesController
+ */
+- (instancetype)initWithService:(EarthquakesService *)service NS_DESIGNATED_INITIALIZER;
+
+/**
+ A convenience initialiser for EarthquakesController
+
+ @return An instance of EarthquakesController
+ */
+- (instancetype)init;
 
 /**
  Retrieves a list of recent earthquakes
