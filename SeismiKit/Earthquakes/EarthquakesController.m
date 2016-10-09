@@ -7,9 +7,11 @@
 //
 
 #import "EarthquakesController.h"
+
+#import "EarthquakesList.h"
 #import "EarthquakesService.h"
 
-@interface EarthquakesController ()
+@interface EarthquakesController () <EarthquakesServiceDelegate>
 
 @property (nonatomic, strong) EarthquakesService *service;
 
@@ -23,6 +25,7 @@
 
     if (self) {
         _service = service;
+        _service.delegate = self;
     }
 
     return self;
@@ -37,6 +40,26 @@
 - (void)retrieveEarthquakes
 {
     [self.service retrieveEarthquakes];
+}
+
+#pragma mark - EarthquakesServiceDelegate
+
+- (void)earthquakesService:(EarthquakesService *)controller didRetrieveEarthquakes:(EarthquakesList *)earthquakeList
+{
+    /**
+     *  At the moment, we just pass the earthquakes list straight to the delegate.
+     *
+     *  However, in the future, this class can be used to perform any additional tasks like:
+     *  - Caching the earthquake list until forcefully refreshed
+     *  - Merging data about the earthquake from some other API call, etc.
+     */
+    
+    [self.delegate earthquakesController:self didRetrieveEarthquakes:earthquakeList.earthquakes];
+}
+
+- (void)earthquakesService:(EarthquakesService *)controller didFailToRetrieveEarthquakesWithError:(NSError *)error
+{
+    [self.delegate earthquakesController:self didFailToRetrieveEarthquakesWithError:error];
 }
 
 @end

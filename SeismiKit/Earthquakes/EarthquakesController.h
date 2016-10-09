@@ -41,6 +41,11 @@
 @interface EarthquakesController : NSObject
 
 /**
+ The delegate to send earthquake retrieval information to
+ */
+@property (nonatomic, weak) id<EarthquakesControllerDelegate> delegate;
+
+/**
  Initialises an instance of EarthquakesController with the EarthquakesService instance
 
  @param service The EarthquakesService
