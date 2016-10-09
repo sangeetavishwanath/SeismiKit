@@ -21,6 +21,8 @@
 		A702CB731DA9CCE00002C010 /* SessionManagerFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = A702CB711DA9CCE00002C010 /* SessionManagerFactory.h */; };
 		A702CB741DA9CCE00002C010 /* SessionManagerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A702CB721DA9CCE00002C010 /* SessionManagerFactory.m */; };
 		A702CB771DA9D3700002C010 /* EarthquakesControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = A702CB761DA9D3700002C010 /* EarthquakesControllerSpec.m */; };
+		A702CB7B1DA9D6DE0002C010 /* Earthquake.h in Headers */ = {isa = PBXBuildFile; fileRef = A702CB791DA9D6DE0002C010 /* Earthquake.h */; };
+		A702CB7C1DA9D6DE0002C010 /* Earthquake.m in Sources */ = {isa = PBXBuildFile; fileRef = A702CB7A1DA9D6DE0002C010 /* Earthquake.m */; };
 		AEE7A1211EDFBCBBA00805B0 /* libPods-SeismiKitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA98711D56B1D564848AC87 /* libPods-SeismiKitTests.a */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +56,8 @@
 		A702CB711DA9CCE00002C010 /* SessionManagerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionManagerFactory.h; sourceTree = "<group>"; };
 		A702CB721DA9CCE00002C010 /* SessionManagerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionManagerFactory.m; sourceTree = "<group>"; };
 		A702CB761DA9D3700002C010 /* EarthquakesControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthquakesControllerSpec.m; sourceTree = "<group>"; };
+		A702CB791DA9D6DE0002C010 /* Earthquake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Earthquake.h; sourceTree = "<group>"; };
+		A702CB7A1DA9D6DE0002C010 /* Earthquake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Earthquake.m; sourceTree = "<group>"; };
 		AE94E6DF9A6BC154AE371B27 /* libPods-SeismiKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SeismiKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBA9286D7E747E12E8F6A743 /* Pods-SeismiKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeismiKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SeismiKitTests/Pods-SeismiKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E62BAD53487683CACC30FC8A /* Pods-SeismiKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeismiKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SeismiKit/Pods-SeismiKit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +127,7 @@
 		A702CB5F1DA9B5CC0002C010 /* Earthquakes */ = {
 			isa = PBXGroup;
 			children = (
+				A702CB781DA9D6CE0002C010 /* Model */,
 				A702CB601DA9B6070002C010 /* EarthquakesController.h */,
 				A702CB611DA9B6070002C010 /* EarthquakesController.m */,
 				A702CB641DA9C5780002C010 /* EarthquakesService.h */,
@@ -150,6 +155,15 @@
 				A702CB761DA9D3700002C010 /* EarthquakesControllerSpec.m */,
 			);
 			path = Earthquakes;
+			sourceTree = "<group>";
+		};
+		A702CB781DA9D6CE0002C010 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A702CB791DA9D6DE0002C010 /* Earthquake.h */,
+				A702CB7A1DA9D6DE0002C010 /* Earthquake.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		CD61F29403D80FBB6B0E9EBB /* Frameworks */ = {
@@ -180,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A702CB6F1DA9CB8C0002C010 /* SessionService.h in Headers */,
+				A702CB7B1DA9D6DE0002C010 /* Earthquake.h in Headers */,
 				A702CB621DA9B6070002C010 /* EarthquakesController.h in Headers */,
 				A702CB6A1DA9C7FA0002C010 /* EarthquakesRequest.h in Headers */,
 				A702CB661DA9C5780002C010 /* EarthquakesService.h in Headers */,
@@ -375,6 +390,7 @@
 				A702CB671DA9C5780002C010 /* EarthquakesService.m in Sources */,
 				A702CB6B1DA9C7FA0002C010 /* EarthquakesRequest.m in Sources */,
 				A702CB631DA9B6070002C010 /* EarthquakesController.m in Sources */,
+				A702CB7C1DA9D6DE0002C010 /* Earthquake.m in Sources */,
 				A702CB741DA9CCE00002C010 /* SessionManagerFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
